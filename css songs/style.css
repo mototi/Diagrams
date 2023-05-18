@@ -1,0 +1,113 @@
+:root{
+    --main-color: #532a7f;
+    --text-color: #fff;
+    --transition-delay: 0s;
+    --transition-duration: 0.3s;
+    --transition-function: ease-in
+  }
+  
+  *{
+    box-sizing: border-box;
+    color: #fff;
+  }
+  
+  body{
+    margin: 0;
+    font-family: 'Archivo', sans-serif;
+    background-color: #532a7f;
+  }
+  
+  header{
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+  }
+  
+
+  .container{
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  
+  header > .container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  
+  header > .container h1{
+    font-weight: 800;
+    margin: 0;
+  }
+  
+  header > .container p{
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+  }
+  
+  header > .container button{
+    color: var(--main-color);
+    padding: 15px 29px;
+    font-weight: 500;
+    font-size: 1.05rem;
+    cursor: pointer;
+    border-style: solid;
+    border-color: var(--text-color);
+  }
+  
+  
+  header > .container button:hover{
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border-color: var(--text-color);
+    font-weight: 600;
+  }
+
+  .list{
+
+    width: 50%;
+    border-style: solid;
+    margin: auto;
+    padding: 25px;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+    display: flex;
+
+}
+
+.left {
+
+    width: 50%;
+
+}
+
+.right{
+
+    width: 50%;
+
+}
+
+.item {
+
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 15px;
+    float: left;
+
+
+}
+
+.number {
+    padding: 10px;
+    background-color: rgb(195, 33, 251);
+
+}
