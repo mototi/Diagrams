@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../Roboto/Roboto-Regular.ttf);
+}
+
+body{
+    font-family: "Roboto" ,sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+header .small-nav::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+header .small-nav .Links,
+header .small-nav .buttons{
+    width: 50%;
+    float: left;
+    
+}
+
+header .small-nav {
+    background-color: #f5f5f5;
+    padding: 0 40px;
+}
+
+header .small-nav ul{
+    list-style: none;
+}
+
+header .small-nav .Links li{
+    float: left;
+    padding: 5px;
+    margin-top: 8px;
+}
+header .small-nav .Links a{
+    text-decoration: none;
+    color: #939a9b;
+}
+
+header .small-nav .Links a:hover{
+    text-decoration:underline;
+    color: #939a9b;
+}
+
+header .small-nav .counters{
+    display: none;
+}
+
+header .small-nav .buttons .account{
+    float: right;
+}
+
+header .small-nav .buttons ul{
+    font-size: .85rem;
+    display: none;
+}
+
+header .small-nav .buttons li{
+    padding: 10px ;
+}
+
+
+header .small-nav .buttons a{
+    text-decoration: none;
+    color: #212529;
+}
+
+header .small-nav .buttons .account label {
+    padding: .5rem ;
+    font-size: .85rem;
+    display: block;
+    background-color: white;
+    color: #212529;
+    margin: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.account label ul li:hover{
+    background-color: #d4d7d7;
+}
+.account label ul li:hover >a{
+    text-decoration: underline;
+}
+
+header .small-nav .buttons .account label:hover >ul{
+    display: block;
+    position: absolute;
+    background-color: white;
+    border: rgb(0,0,0,0.15) 1px solid;
+    min-width: 100%;
+    top:100%;
+    left: 0;
+    padding: 5px 0;
+}
+
+header .small-nav .buttons .account label::after{
+    content: '';
+    display: inline-block;
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    margin:0 3px 2px 10px;
+}
+
+/* main nav*/
+
+header .main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+    background-color: #363d42;
+    position: relative;
+}
+
+header .main-nav .categories .menu label{
+    background-color: #f8cb28;
+    position: relative;
+    font-size: 1.4rem;
+    padding: 15px;
+}
+
+header .main-nav .categories .menu {
+    background-color: #f8cb28;
+    position: relative;
+    font-size: 1.4rem;
+    padding: 15px 0; 
+}
+
+
+header .main-nav .categories label span{
+    margin: 0 15px 0 5px;
+}
+header .main-nav .categories label ul{
+    list-style: none;
+    display: none;
+    font-size: 1.4rem;
+}
+header .main-nav .categories .menu :hover ul{
+    display: block;
+    position: absolute;
+    top: 100%;
+    min-width: 100%;
+    left: 0;
+    padding: 5px 0;
+    background-color: #f8cb28;
+    border: rgb(0,0,0,0.15) 1px solid;
+    cursor: pointer;
+}
+
+.categories .menu li{
+    padding: 15px;
+}
+
+.categories .menu li:hover{
+    background-color:  #212529;
+}
+
+.categories .menu li:hover >a{
+    color: white;
+    text-decoration: underline 1px;
+}
+
+.categories .menu label a{
+    text-decoration: none;
+    color: #212529;
+}
+
+
+header .main-nav .links{
+    flex-grow: 1;
+}
+
+
+
+header .main-nav .links ul{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    padding-left: 50px;
+}
+header .main-nav .links ul a{
+    text-decoration: none;
+    color: white;
+}
+header .main-nav .links ul li ul{
+    display: none;
+}
+
+header .main-nav .links ul li:hover a{
+color:#f8cb28 ;
+}
+header .main-nav .links ul li:hover #arrow{
+    color:#f8cb28 ;
+    }
+#arrow{
+    color: #f5f5f5;
+}
+header .main-nav .links ul li:hover ul{
+    display: block;
+}
+
+.pages-container{
+    position: relative;
+}
+
+.pages-container ul{
+    display: block;
+    position: absolute;
+    top: 100%;
+    min-width: 100%;
+    background-color: white;
+    border: rgb(0,0,0,0.15) 1px solid;
+    cursor: pointer;
+}
+
+header .main-nav .icons {
+display: flex;
+align-items: center;
+gap: 5px;
+color: #f8cb28;
+}
+
+header .main-nav .icons span{
+    color: white;
+    border: solid 1px white;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+}
+
+
+header .main-nav .logo{
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.main-nav .logo #multi{
+    background-color: white;
+    color: #212529;
+    font-size: xx-large;
+    padding: 5px;
+    position: relative;
+}
+.main-nav .logo #shop{
+    background-color: #f8cb28;
+    color: #f5f5f5;
+    font-size: xx-large;
+    padding: 5px;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+header .logo-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo-section{
+    display: flex;
+    align-items: center;
+    margin: 10px 50px;
+}
+
+header .logo-section .logo #multi{
+    background-color:#212529;
+    color:#f8cb28;
+    font-size : xx-large;
+    padding: 5px;
+    position: relative;
+}
+header .logo-section .logo #shop{
+    background-color: #f8cb28;
+    color:#212529;
+    font-size: xx-large;
+    padding: 5px;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+#search{
+    padding: 6px;
+    border: solid 1px #212529;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+@media screen and (max-width:900px){
+    header .small-nav {
+        padding: 0 15px;
+    }
+    header .main-nav {
+        padding: 0 15px;
+    }
+
+    header .main-nav .links ,
+    header .main-nav .icons {
+        display: none;
+    }
+
+    header .main-nav {
+        flex-direction: row-reverse;
+    }
+
+    header .main-nav .categories span{
+        display: none;
+    }
+
+    header .main-nav .logo{
+        margin-top: 5px;
+        display: block;
+    }
+
+    header .logo-section{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    header .small-nav {
+        padding: 0;
+    }
+
+    header .main-nav {
+        padding: 0 ;
+    }
+
+    header .small-nav .Links{
+        display: none;
+    }
+    
+
+    header .small-nav .buttons{
+        width: 100%;
+    }
+    header .main-nav .links {
+        display: none;
+    }
+}
