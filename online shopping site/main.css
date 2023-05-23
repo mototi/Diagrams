@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../Roboto/Roboto-Regular.ttf);
+}
+
+body{
+    font-family: "Roboto" ,sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:900px){
+    .min-nav .links{
+        display: none;
+    }
+
+    .min-nav .icons {
+        display: block;
+    }
+
+    .container header .min-nav{
+        display: flex;
+        justify-content: center;
+        padding: 5px 10px;
+        gap: 10px;
+    }
+    
+    .container header .logo-section{
+        display: none;
+    }
+
+    .container header .last-nav .links{
+        display: none;
+    }
+
+    .container .last-nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5px;
+        background-color: #3d464d;
+        flex-direction: row-reverse;
+    }
+
+    .last-nav .categories .account label > i 
+    ,#span-cat{
+        display: none;
+    }
+
+    .last-nav .categories .account label{
+        width: 1em;
+        height: 1em;
+    }
+    .last-nav .categories .account{
+        position: static;
+        background-color: #ffd334;
+        padding: .8em;
+    }
+    
+    .last-nav .icons {
+        display: none;
+    }
+
+    .last-nav .logo .multi-shop {
+        font-size: 1em;
+        font-weight: bold;
+        position: relative;
+        margin-top: .4em;
+        cursor: pointer;
+        display: flex;
+    }
+    .last-nav .logo .multi-shop .multi{
+        color: #ffd334;
+        background-color:white;
+        padding: 6px;   
+    }
+    
+    .last-nav .logo .multi-shop .shop{
+        color: #3d464d;
+        background-color: #ffd334;
+        padding: 6px;
+    }
+
+    .last-nav .categories .account .cat-full{
+        display: none;
+    }
+
+    .last-nav .categories .account .cat-shrnk{
+        display: block;
+    }
+    
+
+}
+
+@media screen and (max-width:600px){
+
+    .container header .min-nav{
+        display: flex;
+        justify-content: center;
+        padding: 5px 10px;
+        gap: 5px;
+    }
+    .min-nav .buttons .account label{
+        background-color: #fefefe;
+        padding: 5px 2px;
+        color: #586669;
+        position: relative;
+        display: flex;
+        display: inline-block;
+        font-size: .7em;
+    }
+    .min-nav .icons span{
+        display: inline-block;
+        border: 1px solid #586669;
+        border-radius: 50%;
+        text-align: center;
+        width: 1.5em;
+        line-height: 1.5em;
+        font-size: .5em;
+    }
+    .min-nav .icons div i{
+        display: inline-block;
+        font-size: .8em;
+    }
+
+
+}

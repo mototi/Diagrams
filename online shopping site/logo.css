@@ -1,0 +1,75 @@
+.container .logo-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+
+/********logo itself********/
+.logo-section .logo .multi-shop {
+    font-size: 2em;
+    font-weight: bold;
+    position: relative;
+    bottom: 5px;
+    cursor: pointer;
+    display: flex;
+}
+
+.logo-section .logo .multi-shop .multi{
+    color: #ffd334;
+    background-color: #3d464d;
+    padding: 6px;   
+}
+
+.logo-section .logo .multi-shop .shop{
+    color: #3d464d;
+    background-color: #ffd334;
+    padding: 6px;
+}
+
+
+/*********search bar**********/
+
+.logo-section .s-bar{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-section .s-bar input{
+    padding: .5em 10em .5em .5em;
+    border-radius: 0;
+    border: 1px solid #d7d7d7;
+}
+
+.logo-section .s-bar button{
+    padding: .5em ;
+    background-color: #ffffff;
+    border: 1px solid #d7d7d7;
+    position: absolute;
+    cursor: pointer;
+}
+
+.logo-section .s-bar i {
+    color: #ffd334;
+}
+
+.s-bar .center-bar {
+    display: inline-block;
+}
+
+/********* info**********/
+
+.logo-section .info {
+    text-align: center;
+}
+
+.logo-section .info .cust-serv{
+    color: #93989d;
+}
+.logo-section .info .sup-no{
+    color: #3d464d;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+/********************************************/
