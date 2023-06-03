@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../Roboto/Roboto-Regular.ttf);
+}
+
+body{
+    font-family: "Roboto" ,sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: #f5f5f5;
+}
+
+
+
+
+
+@media screen and (max-width:1100px) {
+    @keyframes e {
+        from {
+            gap:1.25em;
+        }
+        to {gap:.5em;}
+    }
+    .hero .main-img div {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        box-sizing: border-box;
+        top: 0;
+        color: white;
+        max-height: 100%;
+        height: 100%;
+        gap: .5em;
+        animation-name: e;
+        animation-duration: 3s;
+    }    
+
+    .hero .main-img div h2{
+        font-size: 1.5em;
+    }
+
+    .hero .main-img div p{
+        font-size: .75em;
+        margin: 0em auto;
+        width: 80%;
+    }
+
+    .hero .main-img div button {
+        margin: 0em auto;
+        padding: .4em 1em;
+        font-size: .8em;
+    }
+
+    .hero .main-img div button:hover{
+        font-size: .8em;
+    }
+
+
+    /**********sec and third img **************/
+    .hero .sec-img div h2 {
+        font-size: .8em;
+    }
+    
+    .hero .sec-img div p{
+        font-size: 1.6em;
+        margin: .07em auto;
+    }
+    
+    .hero .sec-img div button {
+        padding: .25em .55em;
+        font-size: .8em;
+    }
+    
+    .hero .sec-img div button:hover{
+        font-size: .85em;    
+    }
+
+
+    /**************** hero-bootom************/
+    .hero-bottom .hb-item i {
+        font-size: 1.2rem;
+        padding: .8em .4em .8em .8em;
+    }
+    
+    .hero-bottom .hb-item span {
+        padding-right: .5em;
+    }
+
+    /********* categories display***********/
+
+    .categories-display {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 10px 40px;
+        gap: 10px;
+    }
+    
+    
+}
+
+@media screen and (max-width:900px){
+    .min-nav .links{
+        display: none;
+    }
+
+    .min-nav .icons {
+        display: block;
+    }
+
+    .container header .min-nav{
+        display: flex;
+        justify-content: center;
+        padding: 5px 10px;
+        gap: 10px;
+    }
+    
+    .container header .logo-section{
+        display: none;
+    }
+
+    .container header .last-nav .links{
+        display: none;
+    }
+
+    .container .last-nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5px;
+        background-color: #3d464d;
+        flex-direction: row-reverse;
+    }
+
+    .last-nav .categories .account label > i 
+    ,#span-cat{
+        display: none;
+    }
+
+    .last-nav .categories .account label{
+        width: 1em;
+        height: 1em;
+    }
+    .last-nav .categories .account{
+        position: static;
+        background-color: #ffd334;
+        padding: .8em;
+    }
+    
+    .last-nav .icons {
+        display: none;
+    }
+
+    .last-nav .logo .multi-shop {
+        font-size: 1em;
+        font-weight: bold;
+        position: relative;
+        margin-top: .4em;
+        cursor: pointer;
+        display: flex;
+    }
+    .last-nav .logo .multi-shop .multi{
+        color: #ffd334;
+        background-color:white;
+        padding: 6px;   
+    }
+    
+    .last-nav .logo .multi-shop .shop{
+        color: #3d464d;
+        background-color: #ffd334;
+        padding: 6px;
+    }
+
+    .last-nav .categories .account .cat-full{
+        display: none;
+    }
+
+    .last-nav .categories .account .cat-shrnk{
+        display: block;
+    }
+
+/*******************hero section******************/
+    .hero{
+        grid-template-columns: 1fr;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    /**********sec and third img **************/
+    .hero .sec-img div button {
+        padding: .2em .5em;
+        font-size: .75em;
+    }
+        
+    .hero .sec-img div button:hover{
+        font-size: .8em;    
+    }
+
+/********** hero-bottom*****************************/
+
+.hero-bottom {
+    padding: 0 10px 10px 10px;
+    gap:10px;
+}
+
+.hero-bottom .hb-item{
+    width: 40%;
+    text-align: center;
+}
+.hero-bottom .hb-item i {
+    font-size: 1rem;
+    padding: 1em .5em;
+}
+
+.hero-bottom .hb-item span {
+    padding-right: 1em;
+    font-size: .7rem;
+}
+
+
+/****************barier********************/
+.barier{
+    padding: 0 10PX;
+}
+.barier label{
+    font-size: 1.4rem;
+}
+
+
+/********* categories display***********/
+
+    .categories-display {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+        gap: 10px;
+    }
+    
+
+}
+
+@media screen and (max-width:600px){
+
+    .container header .min-nav{
+        display: flex;
+        justify-content: center;
+        padding: 5px 10px;
+        gap: 5px;
+    }
+    .min-nav .buttons .account label{
+        background-color: #fefefe;
+        padding: 5px 2px;
+        color: #586669;
+        position: relative;
+        display: flex;
+        display: inline-block;
+        font-size: .7em;
+    }
+    .min-nav .icons span{
+        display: inline-block;
+        border: 1px solid #586669;
+        border-radius: 50%;
+        text-align: center;
+        width: 1.5em;
+        line-height: 1.5em;
+        font-size: .5em;
+    }
+    .min-nav .icons div i{
+        display: inline-block;
+        font-size: .8em;
+    }
+/******************hero section*******************/
+    .hero{
+        padding: 5px;
+        gap: 5px;
+    }
+
+    .hero .main-img div h2{
+        font-size: 1em;
+    }
+
+    .hero .main-img div p{
+        font-size: .5em;
+        margin: 0em auto;
+        width: 80%;
+    }
+
+    .hero .main-img div button {
+        margin: 0em auto;
+        padding: .3em .7em;
+        font-size: .65em;
+    }  
+    
+/*********** hero-bootom*****************/
+.hero-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+}   
+
+.hero-bottom .hb-item{
+    width: 100%;
+}
+
+
+/****************barier********************/
+.barier{
+    padding: 0 5PX;
+}
+.barier label{
+    font-size: 1.1rem;
+}
+
+.barier i {
+    margin-top: 0.6em;
+}
+/********* categories display***********/
+
+.cd-item {
+    height: 4em;
+    display: flex;
+}
+
+.cd-item .label-contain .inner {
+    padding: 1em  .5em;
+}
+
+
+.cd-item .label-contain  label{
+    font-weight: 600;
+    color: #3d464d;
+    font-size: .5rem;
+}
+.cd-item .label-contain  span{
+    display: block;
+    margin-top: 5px;
+    font-size: .4rem;
+    color: #3d464d;
+}
+
+}
