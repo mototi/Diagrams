@@ -1,0 +1,12 @@
+section{
+    border: 1px solid black;
+    background-color: rgb(212, 209, 209);
+    width: fit-content;
+    position: absolute;
+    left: 40%;
+    top : 38%;
+}
+
+table {
+    margin: 5px;
+}
