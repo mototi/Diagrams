@@ -1,8 +1,8 @@
 "use strict"
 
 function add(){
-    let x = parseInt(document.getElementById('num1').value)
-    let y = parseInt(document.getElementById('num2').value)
+    let x = Number(document.getElementById('num1').value)
+    let y = Number(document.getElementById('num2').value)
 
 
     if ( isNaN(x) || isNaN(y)) {
