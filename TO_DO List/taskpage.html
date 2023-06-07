@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1> TO-DO List </h1>
+    </header>
+
+    <section>
+
+        <div class="in-task">
+            <input type="text" id="tsk-txt" placeholder="Enter the task">
+            <input type="text" id="per-num" placeholder="Enter the periority">
+            <button id="add" onclick="add_task()">
+                add task
+            </button>
+        </div>
+
+
+        <table>
+            <th class="th-dis">tasks</th>
+            <th class="th-dis">periority</th>
+            <th class="th-dis">action</th>
+            <tbody>
+                <tr id="tabody">
+
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+    <script src="./task.js"></script>
+</body>
+</html>
